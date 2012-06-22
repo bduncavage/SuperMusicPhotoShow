@@ -9,11 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @class MainViewController;
+@class Rdio;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) MainViewController *mainViewController;
+@property (strong, nonatomic, readonly) Rdio* rdio;
+
++(AppDelegate*)sharedInstance;
 
 @end

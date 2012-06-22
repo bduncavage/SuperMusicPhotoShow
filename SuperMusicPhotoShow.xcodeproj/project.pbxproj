@@ -23,6 +23,7 @@
 		8B31D3101594C79300E4EDE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */; };
 		8B31D3121594C79E00E4EDE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D3111594C79E00E4EDE7 /* Security.framework */; };
 		8B84E3611594D1CF002F718D /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B84E3601594D1CF002F718D /* Rdio.framework */; };
+		8B9E2DB21594D3060075B98A /* secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B9E2DB11594D3060075B98A /* secret.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8B31D3111594C79E00E4EDE7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8B84E3601594D1CF002F718D /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rdio.framework; sourceTree = "<group>"; };
+		8B9E2DB11594D3060075B98A /* secret.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = secret.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				8B31D2EE1594C70800E4EDE7 /* InfoPlist.strings */,
 				8B31D2F11594C70800E4EDE7 /* main.m */,
 				8B31D2F31594C70800E4EDE7 /* SuperMusicPhotoShow-Prefix.pch */,
+				8B9E2DB11594D3060075B98A /* secret.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8B31D2FF1594C70800E4EDE7 /* MainViewController_iPhone.xib in Resources */,
 				8B31D3021594C70800E4EDE7 /* MainViewController_iPad.xib in Resources */,
 				8B31D3051594C70800E4EDE7 /* FlipsideViewController.xib in Resources */,
+				8B9E2DB21594D3060075B98A /* secret.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

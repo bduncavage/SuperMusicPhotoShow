@@ -14,11 +14,19 @@
 
 @synthesize window = _window;
 @synthesize mainViewController = _mainViewController;
+@synthesize rdio = _rdio;
+
++ (AppDelegate*)sharedInstance
+{
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    Rdio *rdio = [[Rdio alloc] initWithConsumerKey:@"YOUR KEY" andSecret:@"YOUR SECRET" delegate:nil];
-    [rdio.player playSource:@"t2742133"];
+    NSDictionary *secretInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"secret" ofType:@"plist"]];
+    _rdio = [[Rdio alloc] initWithConsumerKey:[secretInfo objectForKey:@"Rdio.Key"]
+                                         andSecret:[secretInfo objectForKey:@"Rdio.Secret"]
+                                          delegate:nil];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

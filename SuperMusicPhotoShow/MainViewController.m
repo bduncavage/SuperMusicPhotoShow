@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "AppDelegate.h"
+#import <Rdio/Rdio.h>
 
 @implementation MainViewController
 
@@ -23,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	[[AppDelegate sharedInstance].rdio.player playSource:@"t2742133"];
 }
 
 - (void)viewDidUnload
