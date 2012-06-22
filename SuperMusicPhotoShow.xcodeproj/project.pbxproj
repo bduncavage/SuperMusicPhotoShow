@@ -18,6 +18,11 @@
 		8B31D2FF1594C70800E4EDE7 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B31D2FD1594C70800E4EDE7 /* MainViewController_iPhone.xib */; };
 		8B31D3021594C70800E4EDE7 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B31D3001594C70800E4EDE7 /* MainViewController_iPad.xib */; };
 		8B31D3051594C70800E4EDE7 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B31D3031594C70800E4EDE7 /* FlipsideViewController.xib */; };
+		8B31D30C1594C78100E4EDE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D30B1594C78100E4EDE7 /* CFNetwork.framework */; };
+		8B31D30E1594C78A00E4EDE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D30D1594C78A00E4EDE7 /* SystemConfiguration.framework */; };
+		8B31D3101594C79300E4EDE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */; };
+		8B31D3121594C79E00E4EDE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D3111594C79E00E4EDE7 /* Security.framework */; };
+		8B31D3141594C83C00E4EDE7 /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D3131594C83C00E4EDE7 /* Rdio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,19 +30,24 @@
 		8B31D2E51594C70800E4EDE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8B31D2E71594C70800E4EDE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B31D2E91594C70800E4EDE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8B31D2ED1594C70800E4EDE7 /* SuperMusicPhotoShow-Info.plist */ = {isa = PBXFileReference; path = "SuperMusicPhotoShow-Info.plist"; sourceTree = "<group>"; };
+		8B31D2ED1594C70800E4EDE7 /* SuperMusicPhotoShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperMusicPhotoShow-Info.plist"; sourceTree = "<group>"; };
 		8B31D2EF1594C70800E4EDE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B31D2F11594C70800E4EDE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8B31D2F31594C70800E4EDE7 /* SuperMusicPhotoShow-Prefix.pch */ = {isa = PBXFileReference; path = "SuperMusicPhotoShow-Prefix.pch"; sourceTree = "<group>"; };
-		8B31D2F41594C70800E4EDE7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B31D2F31594C70800E4EDE7 /* SuperMusicPhotoShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperMusicPhotoShow-Prefix.pch"; sourceTree = "<group>"; };
+		8B31D2F41594C70800E4EDE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B31D2F51594C70800E4EDE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8B31D2F71594C70800E4EDE7 /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		8B31D2F71594C70800E4EDE7 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8B31D2F81594C70800E4EDE7 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		8B31D2FA1594C70800E4EDE7 /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		8B31D2FA1594C70800E4EDE7 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		8B31D2FB1594C70800E4EDE7 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		8B31D2FE1594C70800E4EDE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
 		8B31D3011594C70800E4EDE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
 		8B31D3041594C70800E4EDE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+		8B31D30B1594C78100E4EDE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8B31D30D1594C78A00E4EDE7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8B31D3111594C79E00E4EDE7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8B31D3131594C83C00E4EDE7 /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rdio.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +55,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B31D3121594C79E00E4EDE7 /* Security.framework in Frameworks */,
+				8B31D3101594C79300E4EDE7 /* AudioToolbox.framework in Frameworks */,
+				8B31D30E1594C78A00E4EDE7 /* SystemConfiguration.framework in Frameworks */,
+				8B31D30C1594C78100E4EDE7 /* CFNetwork.framework in Frameworks */,
 				8B31D2E61594C70800E4EDE7 /* UIKit.framework in Frameworks */,
 				8B31D2E81594C70800E4EDE7 /* Foundation.framework in Frameworks */,
 				8B31D2EA1594C70800E4EDE7 /* CoreGraphics.framework in Frameworks */,
+				8B31D3141594C83C00E4EDE7 /* Rdio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +89,11 @@
 		8B31D2E41594C70800E4EDE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B31D3131594C83C00E4EDE7 /* Rdio.framework */,
+				8B31D3111594C79E00E4EDE7 /* Security.framework */,
+				8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */,
+				8B31D30D1594C78A00E4EDE7 /* SystemConfiguration.framework */,
+				8B31D30B1594C78100E4EDE7 /* CFNetwork.framework */,
 				8B31D2E51594C70800E4EDE7 /* UIKit.framework */,
 				8B31D2E71594C70800E4EDE7 /* Foundation.framework */,
 				8B31D2E91594C70800E4EDE7 /* CoreGraphics.framework */,
@@ -269,9 +289,14 @@
 		8B31D3091594C70800E4EDE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperMusicPhotoShow/SuperMusicPhotoShow-Prefix.pch";
 				INFOPLIST_FILE = "SuperMusicPhotoShow/SuperMusicPhotoShow-Info.plist";
+				OTHER_LDFLAGS = "--all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,9 +305,14 @@
 		8B31D30A1594C70800E4EDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperMusicPhotoShow/SuperMusicPhotoShow-Prefix.pch";
 				INFOPLIST_FILE = "SuperMusicPhotoShow/SuperMusicPhotoShow-Info.plist";
+				OTHER_LDFLAGS = "--all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
