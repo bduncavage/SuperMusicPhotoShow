@@ -22,7 +22,7 @@
 		8B31D30E1594C78A00E4EDE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D30D1594C78A00E4EDE7 /* SystemConfiguration.framework */; };
 		8B31D3101594C79300E4EDE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */; };
 		8B31D3121594C79E00E4EDE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D3111594C79E00E4EDE7 /* Security.framework */; };
-		8B31D3141594C83C00E4EDE7 /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31D3131594C83C00E4EDE7 /* Rdio.framework */; };
+		8B84E3611594D1CF002F718D /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B84E3601594D1CF002F718D /* Rdio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		8B31D30D1594C78A00E4EDE7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8B31D3111594C79E00E4EDE7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8B31D3131594C83C00E4EDE7 /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rdio.framework; sourceTree = "<group>"; };
+		8B84E3601594D1CF002F718D /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rdio.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				8B31D2E61594C70800E4EDE7 /* UIKit.framework in Frameworks */,
 				8B31D2E81594C70800E4EDE7 /* Foundation.framework in Frameworks */,
 				8B31D2EA1594C70800E4EDE7 /* CoreGraphics.framework in Frameworks */,
-				8B31D3141594C83C00E4EDE7 /* Rdio.framework in Frameworks */,
+				8B84E3611594D1CF002F718D /* Rdio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		8B31D2E41594C70800E4EDE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8B31D3131594C83C00E4EDE7 /* Rdio.framework */,
+				8B84E3601594D1CF002F718D /* Rdio.framework */,
 				8B31D3111594C79E00E4EDE7 /* Security.framework */,
 				8B31D30F1594C79300E4EDE7 /* AudioToolbox.framework */,
 				8B31D30D1594C78A00E4EDE7 /* SystemConfiguration.framework */,
@@ -296,7 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperMusicPhotoShow/SuperMusicPhotoShow-Prefix.pch";
 				INFOPLIST_FILE = "SuperMusicPhotoShow/SuperMusicPhotoShow-Info.plist";
-				OTHER_LDFLAGS = "--all_load";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -312,7 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperMusicPhotoShow/SuperMusicPhotoShow-Prefix.pch";
 				INFOPLIST_FILE = "SuperMusicPhotoShow/SuperMusicPhotoShow-Info.plist";
-				OTHER_LDFLAGS = "--all_load";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -337,6 +337,7 @@
 				8B31D30A1594C70800E4EDE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
