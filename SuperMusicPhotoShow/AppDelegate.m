@@ -8,17 +8,39 @@
 
 #import "AppDelegate.h"
 #import <Rdio/Rdio.h>
+#import <AssetsLibrary/ALAssetsGroup.h>
 #import "MainViewController.h"
+#import "Constants.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize mainViewController = _mainViewController;
 @synthesize rdio = _rdio;
+@synthesize assetsArray = _assetsArray;
 
 + (AppDelegate*)sharedInstance
 {
     return (AppDelegate*)[UIApplication sharedApplication].delegate;
+}
+
+- (void)initializePhotoArray
+{
+    _library = [[ALAssetsLibrary alloc] init];
+    _assetsArray = [[NSMutableArray alloc] init];
+    
+    [_library enumerateGroupsWithTypes:ALAssetsGroupAlbum
+                                  usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+                                      [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
+                                          if(asset != nil) {
+                                              [_assetsArray addObject:asset];
+                                          }
+                                      }];
+                                  }
+     
+                                failureBlock:^(NSError* error) {
+                                    
+                                }];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,6 +49,8 @@
     _rdio = [[Rdio alloc] initWithConsumerKey:[secretInfo objectForKey:@"Rdio.Key"]
                                          andSecret:[secretInfo objectForKey:@"Rdio.Secret"]
                                           delegate:nil];
+    
+    [self initializePhotoArray];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
